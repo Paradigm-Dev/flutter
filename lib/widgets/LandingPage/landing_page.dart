@@ -22,15 +22,15 @@ class LandingPage extends StatelessWidget {
                     alignment: Alignment.topLeft,
                     child: Flex(
                       direction: Axis.vertical,
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
                           "Applications and services",
                           textAlign: TextAlign.left,
                           style: TextStyle(
-                            fontSize: 48,
-                            fontWeight: FontWeight.w700,
-                          ),
+                              fontSize: 48,
+                              fontWeight: FontWeight.w700,
+                              height: 1.5),
                         ),
                         Text(
                           "built for the 21st century",
@@ -47,19 +47,22 @@ class LandingPage extends StatelessWidget {
                   Flex(
                     direction: Axis.horizontal,
                     children: <Widget>[
-                      SizedBox(
-                        width: 750,
-                        height: 300,
-                        child: Text(
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                          textAlign: TextAlign.left,
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Color.fromRGBO(158, 158, 158, 1),
-                            fontWeight: FontWeight.w100,
+                      Padding(
+                        padding: EdgeInsets.only(top: 20),
+                        child: SizedBox(
+                          width: 750,
+                          height: 300,
+                          child: Text(
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                                fontSize: 20,
+                                color: Color.fromRGBO(158, 158, 158, 1),
+                                fontWeight: FontWeight.w100,
+                                height: 1.5),
                           ),
                         ),
-                      ),
+                      )
                     ],
                   ),
                 ],

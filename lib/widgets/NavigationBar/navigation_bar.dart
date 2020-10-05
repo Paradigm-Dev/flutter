@@ -34,12 +34,9 @@ class NavigationBar extends StatelessWidget {
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all<Color>(
                       Color.fromRGBO(24, 45, 87, 1)),
-                  minimumSize: MaterialStateProperty.all<Size>(Size(100, 46)),
                   elevation: MaterialStateProperty.all<double>(0.0),
                 ),
-                child: Text('SIGN IN',
-                    style:
-                        TextStyle(fontSize: 14, fontWeight: FontWeight.w700)),
+                child: Text('SIGN IN'),
               ),
               SizedBox(
                 width: 60,
