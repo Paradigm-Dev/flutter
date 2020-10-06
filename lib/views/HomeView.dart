@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:paradigm/widgets/NavigationBar/navigation_bar.dart';
-import 'package:paradigm/widgets/LandingPage/landing_page.dart';
-import 'package:paradigm/widgets/CenteredView/centered_view.dart';
+// import 'package:paradigm/widgets/NavigationBar/navigation_bar.dart';
+import 'package:paradigm/widgets/LandingPage.dart';
+import 'package:paradigm/utilities/CenteredView.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key key}) : super(key: key);
@@ -13,7 +13,7 @@ class HomeView extends StatelessWidget {
       body: CenteredView(
         child: Column(
           children: <Widget>[
-            NavigationBar(),
+            // NavigationBar(),
             LandingPage(),
           ],
         ),
