@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'views/HomeView.dart';
+import 'views/MainView.dart';
+import 'views/LandingView.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,6 +19,6 @@ class MyApp extends StatelessWidget {
               .textTheme
               .apply(fontFamily: 'Roboto', bodyColor: Colors.white),
         ),
-        home: HomeView());
+        home: LandingView());
   }
 }

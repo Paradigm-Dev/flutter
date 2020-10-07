@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:paradigm/widgets/NavigationBar/navigation_bar.dart';
-import 'package:paradigm/widgets/LandingPage.dart';
 import 'package:paradigm/utilities/CenteredView.dart';
 
 class HomeView extends StatelessWidget {
@@ -14,7 +12,7 @@ class HomeView extends StatelessWidget {
         child: Column(
           children: <Widget>[
             // NavigationBar(),
-            LandingPage(),
+            // LandingPage(),
           ],
         ),
       ),

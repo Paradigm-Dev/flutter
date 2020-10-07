@@ -1,13 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-class LandingPage extends StatelessWidget {
+import 'package:paradigm/utilities/CenteredView.dart';
+
+class LandingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(15, 30, 60, 1),
+      body: CenteredView(
         child: Column(
-      children: [LandingHeader(), LandingBody()],
-    ));
+          children: <Widget>[
+            LandingHeader(),
+            LandingBody(),
+          ],
+        ),
+      ),
+    );
   }
 }
 
@@ -15,13 +24,13 @@ class LandingBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Expanded(
-            flex: 2,
-            child: Padding(
-              padding: EdgeInsets.only(top: 48),
+      child: Padding(
+        padding: EdgeInsets.only(top: 48),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              flex: 2,
               child: Align(
                 alignment: Alignment.topLeft,
                 child: Flex(
@@ -74,9 +83,15 @@ class LandingBody extends StatelessWidget {
                 ),
               ),
             ),
-          ),
-          Expanded(child: Card(child: Text('Hello'))),
-        ],
+            Expanded(
+                child: Card(
+                    color: Colors.grey[800],
+                    child: Padding(
+                        padding: EdgeInsets.all(16),
+                        child:
+                            Text('Sign up', style: TextStyle(fontSize: 34))))),
+          ],
+        ),
       ),
     );
   }
